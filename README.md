@@ -1,1 +1,1 @@
-# Visual_Computing
+# Visual Computing Exercises
