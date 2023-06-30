@@ -181,8 +181,8 @@ os.makedirs(os.path.join(args.output_dir, "img"), exist_ok=True)
 # Save the dataset
 for i, (target_segmap, color) in enumerate(zip(data['target_segmaps'], data['colors'])):
     # Generate file names with leading zeros
-    mask_file_name = f"{args.start_index + i:04d}_mask.png"
-    color_file_name = f"{args.start_index + i:04d}_color.png"
+    mask_file_name = f"{args.start_index + i:04d}.png"
+    color_file_name = f"{args.start_index + i:04d}.png"
 
     target_segmap[target_segmap == 1] = 255
 
